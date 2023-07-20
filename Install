@@ -1,0 +1,22 @@
+#!/bin/sh
+
+cd `dirname $0`
+. ./Configuration
+
+#
+# Create directories if they don't already exist.
+#
+if [ ! -d ${LOGDIR} ]
+then
+    mkdir -p ${LOGDIR}
+fi
+if [ ! -d ${RPTDIR} ]
+then
+    mkdir -p ${RPTDIR}
+fi
+
+#
+# Set permissions on directories and files.
+#
+chmod 664 Configuration* HISTORY
+chmod 775 ${LOGDIR} ${RPTDIR} scripts scripts/*.sql

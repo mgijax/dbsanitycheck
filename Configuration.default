@@ -1,0 +1,20 @@
+#!/bin/sh
+
+if [ "${MGICONFIG}" = "" ]
+then
+    MGICONFIG=/usr/local/mgi/live/mgiconfig
+    export MGICONFIG
+fi
+
+. ${MGICONFIG}/master.config.sh
+
+BASEDIR=${DATALOADSOUTPUT}/mgi/dbsanitycheck
+LOGDIR=${BASEDIR}/logs
+RPTDIR=${BASEDIR}/reports
+export BASEDIR LOGDIR RPTDIR
+
+PSQL_EXEC=${POSTGRES_HOME}/bin/psql
+export PSQL_EXEC
+
+EMAIL_LIST="mgi-scrum@jax.org dbm"
+export EMAIL_LIST
