@@ -31,12 +31,12 @@ done
 # If any of the queries returned any rows, there is a potential data issue.
 # Set the subject of the email based on whether there is an problem.
 #
-COUNT=`cat ${RPT_FILE} | grep "(.*rows)" | grep -v "(0 rows)" | wc -l`
+COUNT=`cat ${RPT_FILE} | grep "^(.*row.*)" | grep -v "(0 rows)" | wc -l`
 if [ ${COUNT} -eq 0 ]
 then
-    SUBJECT="Database Sanity Report"
+    SUBJECT="Database Sanity Report (Successful)"
 else
-    SUBJECT="Database Sanity Report (Warning)"
+    SUBJECT="Database Sanity Report (Failed)"
 fi
 
 #
