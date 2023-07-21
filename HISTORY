@@ -1,3 +1,9 @@
+TAG: dbsanitycheck-6-0-22-3
+DATE: 7/21/2023
+STAFF: dbm
+CHANGES:
+1) Added ObsoleteTermAnnotations.sql
+
 TAG: dbsanitycheck-6-0-22-2
 DATE: 7/21/2023
 STAFF: dbm
