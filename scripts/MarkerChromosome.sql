@@ -1,5 +1,5 @@
 \echo ''
-\echo 'Markers with no "assigned" by history'
+\echo 'Markers with incorrect chromosome value'
 \echo ''
 select m.*
 from MRK_Marker m
