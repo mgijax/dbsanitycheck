@@ -1,8 +1,8 @@
-TAG: dbsanitycheck-6-0-22-6
-DATE: 8/28/2023
+TAG: dbsanitycheck-6-0-22-7
+DATE: 8/30/2023
 STAFF: dbm
 CHANGES:
-1) Split product into 2 reports (database sanity and pipeline sanity)
+1) Moved ObsoleteTermAnnotations.sql to db sanity bucket
 
 TAG: dbsanitycheck-6-0-22-5
 DATE: 8/8/2023
