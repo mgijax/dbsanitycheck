@@ -1,3 +1,9 @@
+TAG: dbsanitycheck-6-0-22-8
+DATE: 11/2/2023
+STAFF: dbm
+CHANGES:
+1) Added EMAPTermMixup.sql
+
 TAG: dbsanitycheck-6-0-22-7
 DATE: 8/30/2023
 STAFF: dbm
