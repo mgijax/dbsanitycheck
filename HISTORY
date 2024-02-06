@@ -1,3 +1,13 @@
+TAG: dbsanitycheck-6-0-23-1
+DATE: 2/6/2024
+STAFF: dbm
+CHANGES:
+1) databaseSanityChecks.sh, pipelineSanityChecks.sh: New
+2) runSanityChecks.sh: Removed
+3) changed scripts directory to scripts_database
+4) Configuration.default: updated email list
+5) Install: updated for new directory
+
 TAG: dbsanitycheck-6-0-22-9
 DATE: 11/6/2023
 STAFF: dbm
