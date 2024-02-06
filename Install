@@ -19,4 +19,5 @@ fi
 # Set permissions on directories and files.
 #
 chmod 664 Configuration* HISTORY
-chmod 775 ${LOGDIR} ${RPTDIR} scripts scripts/*.sql
+chmod 775 ${LOGDIR} ${RPTDIR} scripts_database scripts_pipeline
+chmod 775 scripts_database/*.sql scripts_pipeline/*.sql
