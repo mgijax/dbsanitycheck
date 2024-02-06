@@ -16,5 +16,5 @@ export BASEDIR LOGDIR RPTDIR
 PSQL_EXEC=${POSTGRES_HOME}/bin/psql
 export PSQL_EXEC
 
-EMAIL_LIST="mgi-scrum@jax.org dbm"
+EMAIL_LIST="mgi-scrum@jax.org"
 export EMAIL_LIST
