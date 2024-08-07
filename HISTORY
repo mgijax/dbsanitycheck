@@ -1,3 +1,9 @@
+TAG: dbsanitycheck-6-0-24-1
+DATE: 08/07/2024
+STAFF: lec
+CHANGES:
+EMAIL_LIST="mgiadmin@jax.org"
+
 TAG: dbsanitycheck-6-0-23-4
 TAG: dbsanitycheck-6-0-23-3
 DATE: 03/29/2024
