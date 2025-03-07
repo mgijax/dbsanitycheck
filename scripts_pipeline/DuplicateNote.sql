@@ -14,4 +14,22 @@ mgi_note n
 where d._mgitype_key = n._mgitype_key
 and d._notetype_key = n._notetype_key
 and d._object_key = n._object_key
-and d.note = n.note;
+and d.note = n.note
+;
+
+select _mgitype_key, _notetype_key, _object_key
+into temp dupnotesGXD
+from mgi_note
+where _mgitype_key in (43)
+group by _mgitype_key, _notetype_key, _object_key
+having count(*) > 1
+;
+
+select n._note_key, n._object_key, n._mgitype_key, n._notetype_key, substring(n.note, 1, 50), n._createdby_key, n.creation_date, n._modifiedby_key, n.modification_date
+from dupnotesGXD d,
+mgi_note n
+where d._mgitype_key = n._mgitype_key
+and d._notetype_key = n._notetype_key
+and d._object_key = n._object_key
+;
+
